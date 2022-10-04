@@ -1,2 +1,20 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import java.util.Scanner;
+
+ class main{
+  public static void main(String[] args){
+
+    Scanner teste = new Scanner (System.in);
+    double salario, horas, salariomes = 0;
+
+    System.out.println("Informe o salario por hora trabalhada:");
+    salario = teste.nextDouble();
+
+    System.out.println("Informe as horas trabalhadas por mes:");
+    horas = teste.nextDouble();
+    
+    salariomes = salario*horas;
+    
+    System.out.println("Seu salario mensal foi:");
+    System.out.println(+ salariomes);
+  }
+}
